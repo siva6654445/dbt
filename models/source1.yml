@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: demo
+    database: dbt
+    schema: dbt
+    tables:
+      - name: employees
+      - name: t661
