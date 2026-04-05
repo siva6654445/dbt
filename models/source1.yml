@@ -7,3 +7,8 @@ sources:
     tables:
       - name: employees
       - name: t661
+      - name: fact_employee_performance
+
+      
+      
+      
