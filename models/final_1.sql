@@ -13,5 +13,3 @@ with cte as (
 )
 
 select * from cte
-WHERE 
-eg.department = 'IT'
