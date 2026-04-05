@@ -9,7 +9,9 @@ with cte as (
         case 
             when dayname(date("TIME")) in ('Sun','Sat') then 'weekend'
             else 'Businessday'
-        end as type
+        end as type, 
+
+        {{function_1('TIME')}}
 
     from {{ source('demo','t661') }}
 
@@ -17,4 +19,4 @@ with cte as (
 
 )
 
-select * from cte
+select * from cte;
